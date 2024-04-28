@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ques4()">Question 4</button>
+    <button onclick="ques7()">Question 7</button>
+    <script>
+        document.write("<h3>Question:1</h3>")
+      var mArr = [[],[],[]];
+      document.write(mArr)
+      document.write("<h3>Question:2</h3>")
+      var mArr1=[[0,1,2,3],[1,0,1,2],[2,1,0,1]]
+for(let i=0;i<mArr1.length;i++){
+    document.write(mArr1[i].join(" ")+"<BR>")
+    
+}
+document.write("<h3>Question:3</h3>")
+for(let i=0;i<=10;i++){
+    document.write(i+"<BR>")
+}
+function ques4(){
+    var tabNum=prompt("Enter A Table Number For Table");
+    var tabstar=prompt("Enter A Start Number For Table");;
+    var tabend=prompt("Enter A End Number For Table");
+    for(let i=tabstar;i<=tabend;i++){
+        document.write(tabNum+" X "+i+" = "+tabNum*i+"<BR>")
+        }
+    }
+    document.write("<h3>Question:5</h3>")
+    var arr1=["Alerts","Variables for Strings","Alerts","Variables for Numbers"," Variable Names Legal and Illegal"," Math Expressions: familiar operators"," Math Expressions: Unfamiliar operators","Math Expressions: eliminating ambiguity","Concatenating text strings","Prompts","If Satatement"]
+for(let i=0;i<arr1.length;i++){
+    document.write(arr1[i]+"<BR>")
+}
+document.write("<h4>Names OF Chap Number</h4>")
+for(let i=0;i<arr1.length;i++){
+    document.write("Name OF Chapter "+ i +" is "+arr1[i]+"<BR>")
+}
+document.write("<h3>Question:6</h3>")
+var  arr2=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+document.write("Counting "+arr2+"<BR>")
+    document.write("Rev Counting ")
+for(let i=arr2.length-1;i>0;i--){
+    document.write(arr2[i]+",")
+}
+document.write("<BR>"+"Even Numbers ")
+for(let i=0;i<arr2.length;i++){
+    if(arr2[i] %2 === 0){
+        document.write(arr2[i]+",")
+    }
+}
+document.write("<BR>"+"Odd Numbers ")
+for(let i=0;i<arr2.length;i++){
+    if(arr2[i] %2 !== 0){
+        document.write(arr2[i]+",")
+    }
+}
+document.write("<BR>"+"Series ")
+    for(let i=1;i<arr2.length;i++){
+        if(arr2[i] %2 === 0){
+            document.write(arr2[i]+"k "+",")
+        }
+    }
+    
+    document.write("<h3>Question:7</h3>")
+    function ques7(){
+let arr3 = ["cake", "apple" ,"pie", "cookie", "chips","patties"]
+var arr3pro=prompt("Enter A Item In Freshment Item Of Our Bakery is \n apple  cake pie chips cookie  patties");
+let  flag1=false
+for(let i=0;i<arr3.length;i++){
+    // document.write(arr3[i])
+    if(arr3[i].toLowerCase() === arr3pro.toLowerCase()){
+        var na=arr3[i]
+        var na1=i+1
+     flag1 = true
+       break;
+    }}
+    if(flag1){
+        document.write(na+" Is Available at "+"Index " +na1 +"<BR>")
+            
+        }
+        else{
+            document.write(`${arr3pro}`+" Is not Available At Our Bakery "+"<BR>")
+            }
+        
+        
+        }
+        document.write("<h3>Question:8</h3>")
+        let arr4= [24, 53, 78, 91,99, 12]
+        document.write("Num In Array: "+arr4+"<BR>"+" Big Number Is: "+Math.max(...arr4)+"<BR>"+"Small Number Is : "+Math.min(...arr4))
+            document.write("<h3>Question:9</h3>")
+            for(let i=0;i<=100;i++){
+                if(i % 5 === 0){
+                    
+                    document.write(i+",")
+                }
+            }
+</script>
+</body>
+</html>
